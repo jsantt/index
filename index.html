@@ -9,25 +9,48 @@
     /-->
   </head>
   <body>
-    <h2>Applications</h2>
-    <p>
-       <a href="https://saaennuste.fi">Weather forecast</a>
-    </p>
-    <p>
-      <a href="https://pysäkit.fi">Public transportation</a>
-    </p>
-    
+    <style>
+      body {
+        padding: 1rem;
+      }
+
+      section {
+        margin: 1rem 0rem 3rem 0rem;
+      }
+
+      p {
+        margin: 1rem 0;
+      }
+    </style>
     <h2>Video speed bookmarklet</h2>
-    <p>
-      Video speed bookmarklet increases the playback speed when clicked and
-      reverts the normal speed when clicked again. 
-    </p>
-    <p>
-      Bookmark by dragging the link into the browser toolbar
-      <a
-        href="javascript:(function()%7B(() %3D> %7Bconst videos %3D document.querySelectorAll('video')%3Bfor( video of videos) %7Bconst speed %3D video.playbackRate %3D%3D%3D 1 %3F 12 %3A 1%3Bvideo.playbackRate %3D speed%3B%7D%7D)()%7D)()"
-        >video speed</a
-      >
-    </p>
+    <section>
+      <p>
+        Video speed bookmarklet increases the playback speed when clicked and
+        reverts the normal speed when clicked again.
+      </p>
+
+      <p>
+        <a
+          href="javascript:(function()%7B(() %3D> %7Bconst videos %3D document.querySelectorAll('video')%3Bfor( video of videos) %7Bconst speed %3D video.playbackRate %3D%3D%3D 1 %3F 12 %3A 1%3Bvideo.playbackRate %3D speed%3B%7D%7D)()%7D)()"
+          >video speed</a
+        >
+        Bookmark by dragging the link into the browser toolbar
+      </p>
+    </section>
+
+    <h2>Applications</h2>
+    <section>
+      <p>
+        <img src="saaennuste.png" height="200px" /><br />
+
+        <a href="https://saaennuste.fi">Weather forecast</a>
+      </p>
+    </section>
+    <section>
+      <p>
+        <img src="pysakit.png" height="200px" /><br />
+        <a href="https://pysäkit.fi">Public transportation</a>
+      </p>
+    </section>
   </body>
 </html>
