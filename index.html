@@ -34,7 +34,26 @@
           href="javascript:(function()%7B(() %3D> %7Bconst videos %3D document.querySelectorAll('video')%3Bfor( video of videos) %7Bconst speed %3D video.playbackRate %3D%3D%3D 1 %3F 12 %3A 1%3Bvideo.playbackRate %3D speed%3B%7D%7D)()%7D)()"
           >video speed</a
         >
-        Bookmark by dragging the link into the browser toolbar
+        - bookmark by dragging the link into the browser toolbar
+      </p>
+      <p>
+        Using mobile device?<br />
+        <textarea
+          onclick="this.setSelectionRange(0, this.value.length)"
+          id="myInput"
+        />javascript:(function()%7B(() %3D> %7Bconst videos %3D document.querySelectorAll('video')%3Bfor( video of videos) %7Bconst speed %3D video.playbackRate %3D%3D%3D 1 %3F 12 %3A 1%3Bvideo.playbackRate %3D speed%3B%7D%7D)()%7D)()
+      </textarea>
+
+        copy bookmarklet code and paste it into existing bookmark
+
+        <script>
+          function myFunction() {
+            var copyText = document.getElementById('myInput');
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            document.execCommand('copy');
+          }
+        </script>
       </p>
     </section>
 
@@ -43,13 +62,16 @@
       <p>
         <img src="saaennuste.png" height="200px" /><br />
 
-        <a href="https://saaennuste.fi">Weather forecast</a>
+        <a href="https://saaennuste.fi">Weather forecast app</a> - quickest way to check the current and upcoming weather.
+         See all the nearby observation stations and hourly forecast for three days at a glance.
+         Data is provided by Finnish Meteorological Institute (Ilmatieteen laitos)
       </p>
     </section>
     <section>
       <p>
         <img src="pysakit.png" height="200px" /><br />
-        <a href="https://pysäkit.fi">Public transportation</a>
+        <a href="https://pysäkit.fi">Public transportation app</a> - quickest way to check real time departure times from
+        your nearby public transportation stops. Using open data from HSL.
       </p>
     </section>
   </body>
